@@ -17,10 +17,10 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Sepal Length" placeholder="Sepal Length" required="required" />
-        <input type="text" name="Sepal Width" placeholder="Sepal Width" required="required" />
-		<input type="text" name="Petal Length" placeholder="Petal Length" required="required" />
-		<input type="text" name="Petal Width" placeholder="Petal Width" required="required" />
+    	<input type="text" name="Sepal Length" placeholder="Sepal Length (cm)" required="required" />
+        <input type="text" name="Sepal Width" placeholder="Sepal Width (cm)" required="required" />
+		<input type="text" name="Petal Length" placeholder="Petal Length (cm)" required="required" />
+		<input type="text" name="Petal Width" placeholder="Petal Width (cm)" required="required" />
 
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict Iris Species</button>

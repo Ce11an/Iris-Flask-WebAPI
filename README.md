@@ -49,10 +49,12 @@ $ git clone https://github.com/Ce11an/Iris-Flask-WebAPI.git
 
 ## Usage
 
-To start the Flask app, set the working directory as the `predict_iris` folder:
+### Flask Web API
+
+To start the Flask app, set your command-line working directory as the `predict_iris` folder:
 
 ```bash
-$ cd /Iris-Flask-WebAPI/predict_iris/
+$ cd your_path/Iris-Flask-WebAPI/predict_iris/
 ```
 
 Secondly, run the `iris_flask.py` file:
@@ -63,7 +65,41 @@ $ python iris_flask.py
 
 Thirdly, the app should be running on `http://127.0.0.1:5000/` (your local-host, port 5000). Copy and paste the link into your browser. The web app should look like the below example:
 
-![Logo](Iris-Flask-Example)
+![example_1](example_1.png)
+
+Add in your values and click the blue predict button. The web app should look like this:
+
+![example_2](example_2.png)
+
+**Please Note** I have used `LinearDiscriminantAnalysis()` model for this project with a `MinMaxScaler`. You may find that you need to re-save the pickle files. This can be done by running the `iris_analysis_model.ipynb` file.
+
+### Requesting Data
+
+`Python_request.py`
+
+With the Flask app running, in a new command-line, set your working directory as the `request_iris` folder
+
+```bash
+$ cd your_path/Iris-Flask-WebAPI/request_iris/
+```
+
+To run the `Python_request.py` script, use the following:
+
+```bash
+$ python Python_request.py
+```
+
+Using the default script values the output will be `setosa`
+
+`R_request.R`
+
+Using an R IDE (RStudio for myself) set your working directory as:
+
+```r
+setwd("your_path/Iris-Flask-WebAPI/request_iris/")
+```
+
+Run the script. Using the default script values the output will be `virginica`
 
 
 ## References

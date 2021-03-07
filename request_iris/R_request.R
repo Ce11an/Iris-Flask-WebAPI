@@ -12,10 +12,10 @@ library(httr)
 url <- "http://127.0.0.1:5000/results"
 
 # setting params according to index.html
-params <- list('Sepal Length' = 1.6, 
-               'Sepal Width' = 3.0, 
-               'Petal Length' = 1.9, 
-               'Petal Width' = 0.2)
+params <- list('Sepal Length' = 6.9, 
+               'Sepal Width' = 3.1, 
+               'Petal Length' = 5.1, 
+               'Petal Width' = 2.3)
 
 # receiving response from API
 response <- POST(url, body = params, encode = "json")
