@@ -71,7 +71,7 @@ Add in your values and click the blue predict button. The web app should look li
 
 ![example_2](example_2.png)
 
-**Please Note** I have used `LinearDiscriminantAnalysis()` model for this project with a `MinMaxScaler`. You may find that you need to re-save the pickle files. This can be done by running the `iris_analysis_model.ipynb` file.
+**Please Note** - I have used a `LinearDiscriminantAnalysis()` model for this project with a `MinMaxScaler`. You may find that you need to re-save the pickle files. This can be done by running the `iris_analysis_model.ipynb` file.
 
 ### Requesting Data
 
@@ -108,4 +108,4 @@ Sagar, A. 2019. How to Easily Deploy Machine Learning Models Using Flask. Availa
 
 ## License
 Iris-Flask-WebAPI is licensed under the [MIT](#) license.  
-Copyright &copy; 2021, Rowan Manning
+Copyright &copy; 2021, Cellan Hall
